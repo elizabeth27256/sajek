@@ -139,7 +139,10 @@ const serviciosData = {
     titulo: "Plomería",
     icono: "🚿",
     sub: "Trabajos hidráulicos",
-    imagenes: ["img/plomeria1.jpg"]
+    imagenes: [
+      "img/plomeria1.jpeg",
+      "img/plomeria2.jpeg"
+    ]
   },
   gypsum: {
     titulo: "Gypsum",
@@ -160,13 +163,40 @@ const serviciosData = {
     titulo: "Muebles a Medida",
     icono: "🪑",
     sub: "Muebles personalizados",
-    imagenes: ["img/muebles1.jpg"]
+    imagenes: [
+      "img/mueble1.jpeg",
+      "img/mueble2.jpeg",
+      "img/mueble3.jpeg",
+      "img/mueble4.jpeg",
+      "img/mueble5.jpeg",
+      "img/mueble6.jpeg",
+      "img/mueble7.jpeg",
+      "img/mueble8.jpeg",
+      "img/mueble9.jpeg",
+      "img/mueble10.jpeg",
+      "img/mueble11.jpeg",
+      "img/mueble12.jpeg",
+      "img/mueble13.jpeg"
+    ]
   },
  "instalacion-ceramica": {
     titulo: "Instalación de cerámica",
     icono: "🧱",
     sub: "Colocación de cerámica en pisos y paredes",
-    imagenes: ["img/ceramica1.jpg"]
+    imagenes: [
+      "img/ceramica1.jpeg",
+      "img/ceramica2.jpeg",
+      "img/ceramica3.jpeg",
+      "img/ceramica4.jpeg",
+      "img/portada.jpeg"
+      // "img/ceramica5.jpg",
+      // "img/ceramica6.jpg",
+      // "img/ceramica7.jpg",
+      // "img/ceramica1.jpg",
+      // "img/ceramica1.jpg",
+      // "img/ceramica1.jpg",
+      // "img/ceramica1.jpg"
+    ]
   },
 
   pergolas: {

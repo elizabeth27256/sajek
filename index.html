@@ -27,19 +27,15 @@
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
   <div class="hero-content">
-    <div class="hero-tag">✦ Construcción & Remodelación Profesional</div>
+    <div class="hero-tag">✦ Construcción & Remodelación</div>
     <h1>SAJEK &<br><span>CONSTRUCCION</span></h1>
-    <p>Soluciones profesionales en construcción, remodelación y acabados. Calidad garantizada en cada proyecto.</p>
+    <p>Trabajos de pintura, carpintería, cerámica, pérgolas y más, dejando cada espacio bien hecho y como lo necesitas.</p>
     <div class="hero-btns">
       <a href="#servicios" class="btn-outline">Nuestros Servicios →</a>
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-num">200+</div>
-        <div class="stat-label">Proyectos</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">8</div>
+        <div class="stat-num">30+</div>
         <div class="stat-label">Años de exp.</div>
       </div>
       <div class="stat">
@@ -49,6 +45,95 @@
     </div>
   </div>
 </section>
+
+<!-- GALERÍA -->
+<section id="trabajos">
+
+  <!-- TÍTULO -->
+  <div class="galeria-header reveal">
+    <div>
+      <div class="section-tag">✦ Portafolio</div>
+      <h2 class="section-title">TRABAJOS<br><span>REALIZADOS</span></h2>
+      <div class="gold-divider"></div>
+    </div>
+  </div>
+
+  <!-- GALERÍA -->
+  <div class="gallery-grid reveal">
+
+    <div class="gallery-item">
+      <img src="img/carpinteria10.jpeg" alt="Trabajo 1">
+    </div>
+
+    <div class="gallery-item">
+      <video controls>
+        <source src="img/trabajo2.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/pintura14.jpeg" alt="Trabajo 3">
+    </div>
+
+    <div class="gallery-item">
+      <video controls>
+        <source src="img/trabajo8.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/trabajo1.jpeg" alt="Trabajo 4">
+    </div>
+
+    <div class="gallery-item">
+      <video controls>
+        <source src="img/trabajo4.mp4" type="video/mp4">
+      </video>
+      <div class="ad-text">ANTES</div>
+    </div>
+
+    <div class="gallery-item">
+      <video controls>
+        <source src="img/trabajo4.mp4" type="video/mp4">
+      </video>
+      <div class="ad-text">DESPUÉS</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/trabajo7.jpeg" alt="Trabajo 5">
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/carpinteria15.jpeg" alt="Trabajo 6">
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/mueble11.jpeg" alt="Trabajo 7">
+    </div>
+
+  </div>
+</section>
+
+<!-- ── MODAL GALERÍA DE SERVICIOS ── -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-header">
+      <span class="modal-icon" id="modalIcon"></span>
+      <div>
+        <div class="modal-title" id="modalTitle"></div>
+        <div class="modal-sub" id="modalSub"></div>
+      </div>
+    </div>
+    <div class="modal-gallery" id="modalGallery"></div>
+  </div>
+</div>
+
+<div class="img-viewer" id="imgViewer" onclick="closeImageViewer()">
+    <span class="img-close" onclick="closeImageViewer()">✕</span>
+    <img id="imgViewerContent">
+  </div>
+</div>
 
 <!-- SERVICIOS -->
 <section id="servicios">
@@ -110,68 +195,33 @@
   </div>
 </section>
 
-<!-- ── MODAL GALERÍA DE SERVICIOS ── -->
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal-box" onclick="event.stopPropagation()">
-    <button class="modal-close" onclick="closeModal()">✕</button>
-    <div class="modal-header">
-      <span class="modal-icon" id="modalIcon"></span>
-      <div>
-        <div class="modal-title" id="modalTitle"></div>
-        <div class="modal-sub" id="modalSub"></div>
-      </div>
-    </div>
-    <div class="modal-gallery" id="modalGallery"></div>
-  </div>
-</div>
-
-<div class="img-viewer" id="imgViewer" onclick="closeImageViewer()">
-    <span class="img-close" onclick="closeImageViewer()">✕</span>
-    <img id="imgViewerContent">
-  </div>
-</div>
-
-<!-- GALERÍA -->
-<section id="trabajos">
-  <div class="galeria-header reveal">
-    <div>
-      <div class="section-tag">✦ Portafolio</div>
-      <h2 class="section-title">TRABAJOS<br><span>REALIZADOS</span></h2>
-      <div class="gold-divider"></div>
-    </div>
-    <a href="https://wa.me/593992002604" class="btn-outline" target="_blank">Ver más →</a>
-  </div>
-  <div class="gallery-grid reveal">
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Proyecto 1">
-      <div class="gallery-overlay"><span class="gallery-label">Remodelación Residencial</span></div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Proyecto 2">
-      <div class="gallery-overlay"><span class="gallery-label">Acabados Interiores</span></div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Proyecto 3">
-      <div class="gallery-overlay"><span class="gallery-label">Construcción Nueva</span></div>
-    </div>
-  </div>
-</section>
-
 <!-- NOSOTROS -->
 <section id="nosotros">
   <div class="nosotros-wrap">
-    <div class="nosotros-img-wrap reveal">
-      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Equipo Sajek" class="nosotros-img">
+
+    <!-- IMÁGENES CORREGIDAS -->
+    <div class="nosotros-imgs reveal">
+      <img src="img/portada.jpeg" alt="Trabajo Sajek 1" class="nosotros-img">
+      <img src="img/portada2.jpeg" alt="Trabajo Sajek 2" class="nosotros-img">
+      <img src="img/portada3.jpeg" alt="Trabajo Sajek 2" class="nosotros-img">
+      <img src="img/portada4.jpeg" alt="Trabajo Sajek 2" class="nosotros-img">
+
       <div class="nosotros-badge">
-        <span class="badge-num">8+</span>
+        <span class="badge-num">30+</span>
         <span class="badge-text">Años de<br>Experiencia</span>
       </div>
     </div>
+
     <div class="reveal">
       <div class="section-tag">✦ Sobre Nosotros</div>
       <h2 class="section-title">SOMOS<br><span>EXPERTOS</span></h2>
       <div class="gold-divider"></div>
-      <p class="nosotros-text">En SAJEK & CONSTRUCCION COMPANY ofrecemos servicios profesionales con más de 8 años de trayectoria. Trabajamos con responsabilidad, calidad y garantía en cada proyecto.</p>
+      <p class="nosotros-text">
+        En SAJEK & CONSTRUCCION COMPANY ofrecemos servicios profesionales con más de 30 años de trayectoria. 
+        Trabajamos con responsabilidad, calidad y garantía en cada proyecto. Nos encargamos de construcción, remodelaciones, arreglos y acabados,
+        dejando cada trabajo bien hecho y como el cliente lo necesita.
+      </p>
+
       <div class="nosotros-features">
         <div class="feature-row">
           <div class="feature-dot"></div>
@@ -179,7 +229,7 @@
         </div>
         <div class="feature-row">
           <div class="feature-dot"></div>
-          <div class="feature-text">Equipo profesional certificado y con experiencia</div>
+          <div class="feature-text">Trabajamos en todo tipo de arreglos y trabajos para el hogar</div>
         </div>
         <div class="feature-row">
           <div class="feature-dot"></div>
@@ -190,8 +240,14 @@
           <div class="feature-text">Garantía en todos nuestros servicios y acabados</div>
         </div>
       </div>
-      <a href="https://wa.me/593992002604?text=Hola%2C%20quiero%20cotizar%20un%20trabajo" class="btn-primary" target="_blank">💬 Solicitar Presupuesto</a>
+
+      <a href="https://wa.me/593992002604?text=Hola%2C%20quiero%20cotizar%20un%20trabajo" 
+         class="btn-primary" 
+         target="_blank">
+         💬 Solicitar Presupuesto
+      </a>
     </div>
+
   </div>
 </section>
 
@@ -199,14 +255,20 @@
 <section id="contacto">
   <div class="contacto-inner reveal">
     <div class="section-tag">✦ Contáctanos</div>
-    <h2 class="section-title">HABLEMOS DE<br><span>TU PROYECTO</span></h2>
+    <h2 class="section-title">CUÉNTANOS<br><span>TU IDEA</span></h2>
     <div class="gold-divider contacto-divider"></div>
-    <p class="contacto-sub">Estamos listos para transformar tu espacio. Contáctanos hoy mismo y recibe tu presupuesto sin costo.</p>
+    <p class="contacto-sub">Construimos, remodelamos y también arreglamos. Escríbenos y cotiza sin costo.</p>
     <div class="contact-cards">
       <div class="contact-card">
         <span class="contact-card-icon">📞</span>
         <div class="contact-card-label">Teléfono</div>
         <div class="contact-card-val">0992002604</div>
+        <div class="contact-card-val">+19089378521</div>
+      </div>
+      <div class="contact-card">
+        <span class="contact-card-icon">📩</span>
+        <div class="contact-card-label">Correo</div>
+        <div class="contact-card-val">ojitosmix1975@gmail.com</div>
       </div>
       <div class="contact-card">
         <span class="contact-card-icon">📍</span>
@@ -216,10 +278,10 @@
       <div class="contact-card">
         <span class="contact-card-icon">🕐</span>
         <div class="contact-card-label">Horario</div>
-        <div class="contact-card-val">Lun–Sáb 8–18h</div>
+        <div class="contact-card-val">Lun–Dom 24/7</div>
       </div>
       <div class="contact-card">
-        <span class="contact-card-icon">🕐</span>
+        <span class="contact-card-icon">🧾</span>
         <div class="contact-card-label">Cotizaciones</div>
         <div class="contact-card-val">En todo el Ecuador</Em></div>
       </div>
@@ -264,8 +326,11 @@
 </section>
 
 <!-- BOTÓN FLOTANTE WHATSAPP -->
-<a href="https://wa.me/593992002604?text=Hola%2C%20quiero%20cotizar%20un%20trabajo" target="_blank">
-💬 WhatsApp
+<a href="https://wa.me/593992002604?text=Hola%2C%20quiero%20cotizar%20un%20trabajo" 
+   class="wa-float" 
+   target="_blank" 
+   title="WhatsApp">
+   💬
 </a>
 
 <!-- FOOTER -->
