@@ -203,7 +203,7 @@ const serviciosData = {
     titulo: "Pérgolas",
     icono: "🌿",
     sub: "Diseño y construcción de pérgolas",
-    imagenes: ["img/pergolas1.jpg"]
+    imagenes: ["img/pergola1.jpeg"]
   }
 };
 

@@ -724,7 +724,7 @@ footer p { font-size: 0.8125rem; color: rgba(255,255,255,0.5); }
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columnas */
   gap: 50px;
-  width: 500%;
+  width: 100%;
   max-width: 650px;
   position: relative;
 }
@@ -742,4 +742,11 @@ footer p { font-size: 0.8125rem; color: rgba(255,255,255,0.5); }
   position: absolute;
   bottom: -15px;
   right: -15px;
+}
+
+@media (max-width: 600px) {
+  .nosotros-imgs {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
 }
