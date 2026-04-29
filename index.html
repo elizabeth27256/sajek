@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAJEK & CONSTRUCCION COMPANY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVEGACIÓN -->
+<nav id="mainNav">
+  <a class="logo" href="#hero"><span>SAJEK</span> & CONSTRUCCION</a>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#trabajos">Proyectos</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/593992002604?text=Hola%2C%20quiero%20cotizar%20un%20trabajo" class="nav-cta" target="_blank">💬 WhatsApp</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-tag">✦ Construcción & Remodelación Profesional</div>
+    <h1>SAJEK &<br><span>CONSTRUCCION</span></h1>
+    <p>Soluciones profesionales en construcción, remodelación y acabados. Calidad garantizada en cada proyecto.</p>
+    <div class="hero-btns">
+      <a href="#servicios" class="btn-outline">Nuestros Servicios →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">200+</div>
+        <div class="stat-label">Proyectos</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">8</div>
+        <div class="stat-label">Años de exp.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Garantía</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="servicios-header reveal">
+    <div class="section-tag">✦ Lo Que Hacemos</div>
+    <h2 class="section-title">NUESTROS<br><span>SERVICIOS</span></h2>
+    <div class="gold-divider"></div>
+    <p class="section-sub">Ofrecemos soluciones completas para tu hogar o negocio con los mejores materiales y acabados.</p>
+  </div>
+  <div class="servicios-grid">
+    <div class="service-card reveal" onclick="openModal('pintura')">
+      <span class="service-icon">🎨</span>
+      <div class="service-title">Pintura</div>
+      <p class="service-desc">Pintura interior y exterior con técnicas profesionales y materiales de primera calidad.</p>
+      <div class="card-ver-mas">Ver trabajos →</div>
+    </div>
+    <div class="service-card reveal" onclick="openModal('carpinteria')">
+      <span class="service-icon">🔨</span>
+      <div class="service-title">Carpintería</div>
+      <p class="service-desc">Trabajos en madera, instalación de puertas, ventanas y acabados personalizados.</p>
+      <div class="card-ver-mas">Ver trabajos →</div>
+    </div>
+    <div class="service-card reveal" onclick="openModal('electricidad')">
+      <span class="service-icon">⚡</span>
+      <div class="service-title">Electricidad</div>
+      <p class="service-desc">Instalaciones eléctricas residenciales y comerciales certificadas y seguras.</p>
+      <div class="card-ver-mas">Ver trabajos →</div>
+    </div>
+    <div class="service-card reveal" onclick="openModal('plomeria')">
+      <span class="service-icon">🚿</span>
+      <div class="service-title">Plomería</div>
+      <p class="service-desc">Instalación y reparación de sistemas hidráulicos y sanitarios.</p>
+      <div class="card-ver-mas">Ver trabajos →</div>
+    </div>
+    <div class="service-card reveal" onclick="openModal('gypsum')">
+      <span class="service-icon">🧱</span>
+      <div class="service-title">Gypsum</div>
+      <p class="service-desc">Cielos rasos, divisiones y acabados en gypsum con diseños modernos.</p>
+      <div class="card-ver-mas">Ver trabajos →</div>
+    </div>
+    <div class="service-card reveal" onclick="openModal('muebles')">
+      <span class="service-icon">🪑</span>
+      <div class="service-title">Muebles a Medida</div>
+      <p class="service-desc">Diseño y fabricación de muebles personalizados para cada espacio.</p>
+      <div class="card-ver-mas">Ver trabajos →</div>
+    </div>
+    <div class="service-card reveal" onclick="openModal('instalacion-ceramica')">
+        <span class="service-icon">🧱</span>
+        <div class="service-title">Instalación de cerámica</div> 
+        <p class="service-desc">Trabajo profesional en colocación de cerámica para pisos y paredes, con acabados precisos, nivelación adecuada y alta durabilidad para todo tipo de espacios en el hogar.</p>
+        <div class="card-ver-mas">Ver trabajos →</div>
+    </div>
+    <div class="service-card reveal" onclick="openModal('pergolas')">
+        <span class="service-icon">🌿</span>
+        <div class="service-title">Pérgolas</div> 
+        <p class="service-desc">Diseño y construcción de pérgolas para jardines, terrazas y patios, creando espacios cómodos y elegantes para disfrutar al aire libre.</p>
+        <div class="card-ver-mas">Ver trabajos →</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MODAL GALERÍA DE SERVICIOS ── -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-header">
+      <span class="modal-icon" id="modalIcon"></span>
+      <div>
+        <div class="modal-title" id="modalTitle"></div>
+        <div class="modal-sub" id="modalSub"></div>
+      </div>
+    </div>
+    <div class="modal-gallery" id="modalGallery"></div>
+  </div>
+</div>
+
+<div class="img-viewer" id="imgViewer" onclick="closeImageViewer()">
+    <span class="img-close" onclick="closeImageViewer()">✕</span>
+    <img id="imgViewerContent">
+  </div>
+</div>
+
+<!-- GALERÍA -->
+<section id="trabajos">
+  <div class="galeria-header reveal">
+    <div>
+      <div class="section-tag">✦ Portafolio</div>
+      <h2 class="section-title">TRABAJOS<br><span>REALIZADOS</span></h2>
+      <div class="gold-divider"></div>
+    </div>
+    <a href="https://wa.me/593992002604" class="btn-outline" target="_blank">Ver más →</a>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Proyecto 1">
+      <div class="gallery-overlay"><span class="gallery-label">Remodelación Residencial</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Proyecto 2">
+      <div class="gallery-overlay"><span class="gallery-label">Acabados Interiores</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Proyecto 3">
+      <div class="gallery-overlay"><span class="gallery-label">Construcción Nueva</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros">
+  <div class="nosotros-wrap">
+    <div class="nosotros-img-wrap reveal">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Equipo Sajek" class="nosotros-img">
+      <div class="nosotros-badge">
+        <span class="badge-num">8+</span>
+        <span class="badge-text">Años de<br>Experiencia</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="section-tag">✦ Sobre Nosotros</div>
+      <h2 class="section-title">SOMOS<br><span>EXPERTOS</span></h2>
+      <div class="gold-divider"></div>
+      <p class="nosotros-text">En SAJEK & CONSTRUCCION COMPANY ofrecemos servicios profesionales con más de 8 años de trayectoria. Trabajamos con responsabilidad, calidad y garantía en cada proyecto.</p>
+      <div class="nosotros-features">
+        <div class="feature-row">
+          <div class="feature-dot"></div>
+          <div class="feature-text">Materiales de primera calidad en todos nuestros trabajos</div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-dot"></div>
+          <div class="feature-text">Equipo profesional certificado y con experiencia</div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-dot"></div>
+          <div class="feature-text">Presupuesto sin costo y atención personalizada</div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-dot"></div>
+          <div class="feature-text">Garantía en todos nuestros servicios y acabados</div>
+        </div>
+      </div>
+      <a href="https://wa.me/593992002604?text=Hola%2C%20quiero%20cotizar%20un%20trabajo" class="btn-primary" target="_blank">💬 Solicitar Presupuesto</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="contacto-inner reveal">
+    <div class="section-tag">✦ Contáctanos</div>
+    <h2 class="section-title">HABLEMOS DE<br><span>TU PROYECTO</span></h2>
+    <div class="gold-divider contacto-divider"></div>
+    <p class="contacto-sub">Estamos listos para transformar tu espacio. Contáctanos hoy mismo y recibe tu presupuesto sin costo.</p>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <span class="contact-card-icon">📞</span>
+        <div class="contact-card-label">Teléfono</div>
+        <div class="contact-card-val">0992002604</div>
+      </div>
+      <div class="contact-card">
+        <span class="contact-card-icon">📍</span>
+        <div class="contact-card-label">Ubicación</div>
+        <div class="contact-card-val">Quito-Ecuador</div>
+      </div>
+      <div class="contact-card">
+        <span class="contact-card-icon">🕐</span>
+        <div class="contact-card-label">Horario</div>
+        <div class="contact-card-val">Lun–Sáb 8–18h</div>
+      </div>
+      <div class="contact-card">
+        <span class="contact-card-icon">🕐</span>
+        <div class="contact-card-label">Cotizaciones</div>
+        <div class="contact-card-val">En todo el Ecuador</Em></div>
+      </div>
+      
+    </div>
+    <a href="https://wa.me/593992002604?text=Hola%2C%20quiero%20cotizar%20un%20trabajo" class="wa-btn" target="_blank">💬 Escribir por WhatsApp</a>
+  </div>
+</section>
+
+<section id="resenas">
+  <div class="contacto-inner reveal">
+    <div class="section-tag">✦ Opiniones</div>
+    <h2 class="section-title">RESEÑAS DE<br><span>CLIENTES</span></h2>
+    <div class="gold-divider contacto-divider"></div>
+
+    <p class="contacto-sub">
+      Califica nuestro servicio y deja tu opinión ⭐
+    </p>
+
+    <!-- FORMULARIO -->
+    <div class="review-box">
+
+      <div class="stars" id="stars">
+        <span data-value="1">★</span>
+        <span data-value="2">★</span>
+        <span data-value="3">★</span>
+        <span data-value="4">★</span>
+        <span data-value="5">★</span>
+      </div>
+
+      <textarea id="mensajeCliente" placeholder="Escribe tu reseña..."></textarea>
+
+      <button class="btn-primary" onclick="guardarResena()">
+        Publicar reseña
+      </button>
+    </div>
+
+    <!-- LISTA DE RESEÑAS -->
+    <div id="listaResenas" class="reviews-list"></div>
+
+  </div>
+</section>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<a href="https://wa.me/593992002604?text=Hola%2C%20quiero%20cotizar%20un%20trabajo" target="_blank">
+💬 WhatsApp
+</a>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">SAJEK & CONSTRUCCION</div>
+  <p>© 2026 SAJEK & CONSTRUCCION COMPANY — Todos los derechos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
